@@ -1,6 +1,30 @@
 {
   "dependencies": {
-    "@tailwindcss/vite": "^4.0.6",
-    "tailwindcss": "^4.0.6"
+    "@tailwindcss/cli": "^4.0.6",
+    "@tailwindcss/vite": "^4.0.6"
+  },
+  "name": "portfolio2025",
+  "description": "An updated and refined version of my previous portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boothe0/portfolio2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boothe0/portfolio2025/issues"
+  },
+  "homepage": "https://github.com/boothe0/portfolio2025#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^4.0.6",
+    "vite": "^6.1.0"
   }
 }
