@@ -1,4 +1,4 @@
-# Portfolio2025
+# Portfolio2025 (Work in progress)
 An updated and refined version of my previous portfolio
 
 ### Goals
