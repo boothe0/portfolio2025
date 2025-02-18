@@ -1,5 +1,5 @@
 # Portfolio2025 (Work in progress)
-An updated and refined version of my previous portfolio
+An updated and refined version of my previous portfolio (work in progress)
 
 ### Goals
 - Incorporate more javascript into the website
