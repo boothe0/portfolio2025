@@ -1419,6 +1419,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
