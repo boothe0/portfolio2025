@@ -1618,12 +1618,6 @@
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
-  .pt-20 {
-    padding-top: calc(var(--spacing) * 20);
-  }
-  .pt-30 {
-    padding-top: calc(var(--spacing) * 30);
-  }
   .pt-50 {
     padding-top: calc(var(--spacing) * 50);
   }
@@ -2225,9 +2219,20 @@
     transform-box: view-box;
   }
 }
+* {
+  font-family: "Cormorant", serif;
+  font-size: 25px;
+}
 .logo {
   max-width: 10%;
   min-width: 50px;
+}
+.name {
+  font-family: "Caveat", serif;
+  font-size: 75px;
+}
+.major {
+  font-style: italic;
 }
 @keyframes spin {
   to {
