@@ -797,9 +797,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -2221,6 +2218,11 @@
   .transform-view {
     transform-box: view-box;
   }
+  .sm\:grid {
+    @media (width >= 40rem) {
+      display: grid;
+    }
+  }
 }
 * {
   font-family: "Cormorant", serif;
@@ -2236,6 +2238,11 @@
 }
 .major {
   font-style: italic;
+}
+@media screen and (max-width: 425px) {
+  .nav {
+    justify-content: center;
+  }
 }
 @keyframes spin {
   to {
