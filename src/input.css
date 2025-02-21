@@ -1,2 +1,22 @@
 @import "tailwindcss";
+*
+{
+    font-family: "Cormorant", serif;
+    font-size: 25px;
+}
+.logo
+{
+    max-width: 10%;
+    min-width: 50px;
+}
 
+.name
+{
+    font-family: "Caveat", serif;
+    font-size: 75px;
+}
+
+.major
+{
+    font-style: italic;
+}
