@@ -1211,6 +1211,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
@@ -1356,6 +1359,10 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
   }
   .border-x {
     border-inline-style: var(--tw-border-style);
@@ -1606,23 +1613,29 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
-  }
-  .ps-8 {
-    padding-inline-start: calc(var(--spacing) * 8);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
-  .pt-50 {
-    padding-top: calc(var(--spacing) * 50);
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
-  .pt-200 {
-    padding-top: calc(var(--spacing) * 200);
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
   }
   .pt-22 {
     padding-top: calc(var(--spacing) * 22);
+  }
+  .pt-50 {
+    padding-top: calc(var(--spacing) * 50);
+  }
+  .pt-150 {
+    padding-top: calc(var(--spacing) * 150);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
@@ -1632,6 +1645,9 @@
   }
   .pb-50 {
     padding-bottom: calc(var(--spacing) * 50);
+  }
+  .pl-0 {
+    padding-left: calc(var(--spacing) * 0);
   }
   .text-center {
     text-align: center;
@@ -2217,9 +2233,29 @@
       display: grid;
     }
   }
+  .sm\:max-h-45 {
+    @media (width >= 40rem) {
+      max-height: calc(var(--spacing) * 45);
+    }
+  }
   .sm\:grid-cols-6 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .\32 xl\:max-h-80 {
+    @media (width >= 96rem) {
+      max-height: calc(var(--spacing) * 80);
+    }
+  }
+  .\32 xl\:flex-row {
+    @media (width >= 96rem) {
+      flex-direction: row;
     }
   }
 }
@@ -2256,7 +2292,7 @@
     margin-left: 10px;
   }
   .card {
-    padding: 0px;
+    padding: 0;
     display: block;
     justify-content: center;
     align-items: center;
