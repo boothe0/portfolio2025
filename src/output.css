@@ -2238,6 +2238,11 @@
       max-height: calc(var(--spacing) * 45);
     }
   }
+  .sm\:max-h-60 {
+    @media (width >= 40rem) {
+      max-height: calc(var(--spacing) * 60);
+    }
+  }
   .sm\:grid-cols-6 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -2251,6 +2256,11 @@
   .\32 xl\:max-h-80 {
     @media (width >= 96rem) {
       max-height: calc(var(--spacing) * 80);
+    }
+  }
+  .\32 xl\:max-h-85 {
+    @media (width >= 96rem) {
+      max-height: calc(var(--spacing) * 85);
     }
   }
   .\32 xl\:flex-row {
