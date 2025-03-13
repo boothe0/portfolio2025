@@ -2234,11 +2234,6 @@
   .transform-view {
     transform-box: view-box;
   }
-  .sm\:flex {
-    @media (width >= 40rem) {
-      display: flex;
-    }
-  }
   .sm\:grid {
     @media (width >= 40rem) {
       display: grid;
