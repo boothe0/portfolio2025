@@ -785,6 +785,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
   .h-screen {
     height: 100vh;
   }
@@ -799,6 +802,9 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .w-screen {
     width: 100vw;
@@ -2228,6 +2234,11 @@
   .transform-view {
     transform-box: view-box;
   }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
   .sm\:grid {
     @media (width >= 40rem) {
       display: grid;
@@ -2241,6 +2252,11 @@
   .sm\:max-h-60 {
     @media (width >= 40rem) {
       max-height: calc(var(--spacing) * 60);
+    }
+  }
+  .sm\:max-h-100 {
+    @media (width >= 40rem) {
+      max-height: calc(var(--spacing) * 100);
     }
   }
   .sm\:grid-cols-6 {
@@ -2277,6 +2293,10 @@
   max-width: 10%;
   min-width: 50px;
 }
+.logosTools {
+  max-width: 5%;
+  min-width: none;
+}
 .name {
   font-family: "Caveat", serif;
   font-size: 75px;
@@ -2300,6 +2320,10 @@
     max-width: 50px;
     height: 50px;
     margin-left: 10px;
+  }
+  .toolsLogos {
+    max-width: 10%;
+    min-width: 50px;
   }
   .card {
     padding: 0;
