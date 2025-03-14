@@ -800,9 +800,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -2351,6 +2348,9 @@
   font-style: italic;
 }
 @media screen and (max-width: 425px) {
+  .mobileLinks {
+    border-bottom: solid;
+  }
   .nav {
     justify-content: center;
   }

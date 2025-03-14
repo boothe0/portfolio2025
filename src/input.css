@@ -32,6 +32,10 @@
 
 @media screen and (max-width: 425px)
 {
+    .mobileLinks
+    {
+        border-bottom: solid;
+    }
     .nav
     {
         justify-content: center;
