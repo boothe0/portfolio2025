@@ -1,3 +1,12 @@
+let isShown = false;
+
+const cLogo = document.getElementById('Cclick');
+const pyLogo = document.getElementById('pyClick');
+const tailLogo = document.getElementById('tailClick');
+const allExpanded = document.getElementById('expandAll');
+
+const divToggle = document.getElementById('table-container');
+
 const cTableData = [
     {
         lackOfOOP: "Data structures are built from scratch ensuring full understanding.",
@@ -64,18 +73,20 @@ function baseLayoutTable(headers, data)
     return table;
 }
 
-
-function displayTables(){
-    const tableContainer = document.getElementById("table-container");
-
+function displayCTable(tableContainer){
     const cHeaders = ["Lack of OOP", "Scope", "Ease of Use"];
     const cTable = baseLayoutTable(cHeaders, cTableData);
     tableContainer.appendChild(cTable);
+}
 
+function displayPyTable(tableContainer){
     const pyHeaders = ["Object Oriented", "Scope", "Hidden Processes"];
     const pyTable = baseLayoutTable(pyHeaders, pythonTableData);
     tableContainer.appendChild(pyTable);
 
+}
+
+function displayTailTable(tableContainer){
     const tailHeaders = ["Library", "Pros", "Cons"]    
     const tailWindTable = baseLayoutTable(tailHeaders, tailwindCSSData);
     tableContainer.appendChild(tailWindTable);
@@ -83,4 +94,89 @@ function displayTables(){
 }
 
 
-window.onload = displayTables;
+cLogo.addEventListener("click", function(){
+    const tableContainer = document.getElementById('table-container');
+    if (isShown == false){
+        divToggle.classList.remove('hidden');
+        pyLogo.classList.add('hidden');
+        tailLogo.classList.add('hidden');
+        allExpanded.classList.add('hidden');
+        displayCTable(tableContainer);
+        isShown = true;
+    }
+    else
+    {
+        divToggle.classList.add('hidden');
+        pyLogo.classList.remove('hidden');
+        tailLogo.classList.remove('hidden');
+        allExpanded.classList.remove('hidden');
+        tableContainer.innerHTML = '';
+        isShown = false;
+    }
+});
+
+pyLogo.addEventListener("click", function(){
+    const tableContainer = document.getElementById('table-container');
+    if (isShown == false){
+        divToggle.classList.remove('hidden');
+        cLogo.classList.add('hidden');
+        tailLogo.classList.add('hidden');
+        allExpanded.classList.add('hidden');
+        displayPyTable(tableContainer);
+        isShown = true;
+    }
+    else
+    {
+        divToggle.classList.add('hidden');
+        cLogo.classList.remove('hidden');
+        tailLogo.classList.remove('hidden');
+        allExpanded.classList.remove('hidden');
+        tableContainer.innerHTML = '';
+        isShown = false;
+    }
+});
+
+tailLogo.addEventListener("click", function(){
+    const tableContainer = document.getElementById('table-container');
+    if (isShown == false){
+        divToggle.classList.remove('hidden');
+        cLogo.classList.add('hidden');
+        pyLogo.classList.add('hidden');
+        allExpanded.classList.add('hidden');
+        displayTailTable(tableContainer);
+        isShown = true;
+    }
+    else
+    {
+        divToggle.classList.add('hidden');
+        cLogo.classList.remove('hidden');
+        pyLogo.classList.remove('hidden');
+        allExpanded.classList.remove('hidden');
+        tableContainer.innerHTML = '';
+        isShown = false;
+    }
+});
+
+allExpanded.addEventListener("click", function(){
+    const tableContainer = document.getElementById('table-container');
+    if (isShown == false){
+        divToggle.classList.remove('hidden');
+        cLogo.classList.add('hidden');
+        pyLogo.classList.add('hidden');
+        tailLogo.classList.add('hidden');
+        displayCTable(tableContainer);
+        displayPyTable(tableContainer);
+        displayTailTable(tableContainer);       
+        isShown = true;
+    }
+    else
+    {
+        divToggle.classList.add('hidden');
+        cLogo.classList.remove('hidden');
+        pyLogo.classList.remove('hidden');
+        tailLogo.classList.remove('hidden');
+        tableContainer.innerHTML = '';
+        isShown = false;
+    }
+
+});
