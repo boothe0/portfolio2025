@@ -34,8 +34,6 @@ const tailwindCSSData = [
 ];
 
 
-
-
 function baseLayoutTable(headers, data)
 {
     const table = document.createElement("table");
@@ -96,7 +94,7 @@ function displayTailTable(tableContainer){
 
 cLogo.addEventListener("click", function(){
     const tableContainer = document.getElementById('table-container');
-    if (isShown == false){
+    if (isShown == false && getScreenSize() >= 425){
         divToggle.classList.remove('hidden');
         pyLogo.classList.add('hidden');
         tailLogo.classList.add('hidden');
@@ -180,3 +178,7 @@ allExpanded.addEventListener("click", function(){
     }
 
 });
+
+function getScreenSize(){
+    return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+}
