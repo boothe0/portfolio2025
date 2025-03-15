@@ -67,6 +67,7 @@ function baseLayoutTable(headers, data)
         }
         body.appendChild(tableRow);
     });
+    table.classList.add("mb-5")
     table.appendChild(body);
     return table;
 }
