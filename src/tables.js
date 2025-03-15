@@ -1,4 +1,4 @@
-let isShown = false;
+var isShown = false;
 
 const cLogo = document.getElementById('Cclick');
 const pyLogo = document.getElementById('pyClick');
@@ -33,9 +33,9 @@ const tailwindCSSData = [
     },
 ];
 
-
 function baseLayoutTable(headers, data)
 {
+    
     const table = document.createElement("table");
     table.classList.add("min-w-full", "table-auto", "border-collapse", "border", "border-gray-300");
 
@@ -90,6 +90,39 @@ function displayTailTable(tableContainer){
     tableContainer.appendChild(tailWindTable);
 
 }
+function cBullets(tableContainer)
+{
+    const bulletPoint = document.createElement("ul");
+    bulletPoint.classList.add("mobileborderCards", "p-4", "mr-4")
+    const listElement = document.createElement("li");
+    listElement.innerHTML = "Due to the absence object orientation in C, this forces the programmer to make the data structures from scratch leading to greater depth of understanding."
+    bulletPoint.appendChild(listElement)
+    tableContainer.appendChild(bulletPoint)
+
+}
+
+function pyBullets(tableContainer)
+{
+    const bulletPoint = document.createElement("ul");
+    bulletPoint.classList.add("mobileborderCards", "p-4", "mr-4")
+    const listElement = document.createElement("li");
+    listElement.innerHTML = "There are many built-in classes for ease of use but can lead to an inability to decipher what is going on behind the scenes."
+    bulletPoint.appendChild(listElement)
+    tableContainer.appendChild(bulletPoint)
+
+}
+
+function tailBullets(tableContainer)
+{
+    const bulletPoint = document.createElement("ul");
+    bulletPoint.classList.add("mobileborderCards", "p-4", "mr-4")
+    const listElement = document.createElement("li");
+    listElement.innerHTML = "Coming from bootstrap I found tailwind more customizable, however there was a lack of options when concerning small mobile devices as the smallest built-in class was was 640px."
+    bulletPoint.appendChild(listElement)
+    tableContainer.appendChild(bulletPoint)
+
+}
+
 
 
 cLogo.addEventListener("click", function(){
@@ -100,6 +133,15 @@ cLogo.addEventListener("click", function(){
         tailLogo.classList.add('hidden');
         allExpanded.classList.add('hidden');
         displayCTable(tableContainer);
+        isShown = true;
+    }
+    else if (isShown == false && getScreenSize() <= 425)
+    {
+        divToggle.classList.remove('hidden');
+        pyLogo.classList.add('hidden');
+        tailLogo.classList.add('hidden');
+        allExpanded.classList.add('hidden');
+        cBullets(tableContainer);
         isShown = true;
     }
     else
@@ -123,6 +165,15 @@ pyLogo.addEventListener("click", function(){
         displayPyTable(tableContainer);
         isShown = true;
     }
+    else if (isShown == false && getScreenSize() <= 425)
+    {
+        divToggle.classList.remove('hidden');
+        cLogo.classList.add('hidden');
+        tailLogo.classList.add('hidden');
+        allExpanded.classList.add('hidden');
+        pyBullets(tableContainer);
+        isShown = true;
+    }
     else
     {
         divToggle.classList.add('hidden');
@@ -142,6 +193,15 @@ tailLogo.addEventListener("click", function(){
         pyLogo.classList.add('hidden');
         allExpanded.classList.add('hidden');
         displayTailTable(tableContainer);
+        isShown = true;
+    }
+    else if (isShown == false && getScreenSize() <= 425)
+    {
+        divToggle.classList.remove('hidden');
+        cLogo.classList.add('hidden');
+        pyLogo.classList.add('hidden');
+        allExpanded.classList.add('hidden');
+        tailBullets(tableContainer);
         isShown = true;
     }
     else
