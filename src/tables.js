@@ -115,7 +115,7 @@ cLogo.addEventListener("click", function(){
 
 pyLogo.addEventListener("click", function(){
     const tableContainer = document.getElementById('table-container');
-    if (isShown == false){
+    if (isShown == false && getScreenSize() >= 425){
         divToggle.classList.remove('hidden');
         cLogo.classList.add('hidden');
         tailLogo.classList.add('hidden');
@@ -136,7 +136,7 @@ pyLogo.addEventListener("click", function(){
 
 tailLogo.addEventListener("click", function(){
     const tableContainer = document.getElementById('table-container');
-    if (isShown == false){
+    if (isShown == false && getScreenSize() >= 425){
         divToggle.classList.remove('hidden');
         cLogo.classList.add('hidden');
         pyLogo.classList.add('hidden');
@@ -157,7 +157,7 @@ tailLogo.addEventListener("click", function(){
 
 allExpanded.addEventListener("click", function(){
     const tableContainer = document.getElementById('table-container');
-    if (isShown == false){
+    if (isShown == false && getScreenSize() >= 425){
         divToggle.classList.remove('hidden');
         cLogo.classList.add('hidden');
         pyLogo.classList.add('hidden');
