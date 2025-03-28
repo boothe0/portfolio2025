@@ -14,10 +14,7 @@
 </head>
 <body>
 
-    <div class=" nav flex justify-end p-4 pb-50">
-        Navigation
-    </div>
-    <div class="flex justify-center pb-10 text-[40px] name">
+    <div class="flex justify-center pt-50 pb-10 text-[40px] name">
         Elizabeth Booth
     </div>
     <div class="major flex justify-center pb-50">
@@ -74,11 +71,11 @@
         
     </div>
 
-    <div class=" pt-20">
+    <div class=" pt-20 pl-3">
         Projects
     </div>
     <div class="flex flex-col md:flex-row 2xl:flex-row col-span-2 gap-4 p-2">
-        <div class="border-2 flex flex-col font-bold text-center card sm:max-h-100 2xl:max-h-85">
+        <div class="border-2 flex flex-col font-bold text-center card sm:max-h-100 2xl:max-h-120">
             Project 1
             <div class=" pt-10">
                 <img src="pictures/finalProject.png" alt="mountains"/>
@@ -86,9 +83,11 @@
             <div class=" content-baseline">
                 Final project for a web development class utilizing dynamic functionality with JS.
             </div>
-
+            <div class="pt-5 md:pt-3 md:pb-5 ">
+                <a class="mobileLinks border-transparent border-b-0 hover:border-b-gray-950 transition duration-150 hover:border-b-2" href="https://boothe0.github.io/homework9/" target="_blank">Website link</a>
+            </div>
         </div>
-        <div class="border-2 flex flex-col font-bold text-center card sm:max-h-60 2xl:max-h-85">
+        <div class="border-2 flex flex-col font-bold text-center card sm:max-h-100 2xl:max-h-120">
             Project 2
             <div class=" pt-10">
                 <img src="pictures/recipeTracker.png" alt="recipeTracker"/>
@@ -96,9 +95,11 @@
             <div class=" content-baseline">
                 Team project that allows for search and sort functionality of recipes.
             </div>
-
+            <div class="pt-9 md:pt-4 md:pb-5 ">
+                <a class="mobileLinks border-transparent border-b-0 hover:border-b-gray-950 transition duration-150 hover:border-b-2" href="https://boothe0.github.io/cs212RecipeTrackerFinal/" target="_blank">Website Link</a>
+            </div>
         </div>
-        <div class="border-2 flex flex-col font-bold text-center card sm:max-h-60 2xl:max-h-85">
+        <div class="border-2 flex flex-col font-bold text-center card sm:max-h-100 2xl:max-h-120">
             <div class="flex justify-center items-center">
                 <img src="pictures/godot_logo.png" alt="godot" class="logo"/>
             </div>
@@ -108,11 +109,45 @@
             <div class="content-baseline ">
                  In-progress inspired by games like Hades made in Godot Game Engine.
             </div>
+            <div class="pt-3 pb-4 ">
+                <a class="mobileLinks border-transparent border-b-0 hover:border-b-gray-950 transition duration-150 hover:border-b-2" href="https://github.com/boothe0/CS386GodotProject" target="_blank">Github link</a>
+            </div>
         </div>
     </div>
-    <div class="pt-150 pb-50 text-center">
-        Footer
+
+    <div class="pt-25 ml-2">
+        My viewpoint on the following programming languages:
+        <img id="Cclick" class="w-10 h-10 hover:cursor-pointer" src="pictures/toolsPictures/c.png"/>
+        <img id="pyClick" class="w-10 h-10 hover:cursor-pointer" src="pictures/toolsPictures/python.png"/>
+        <img id="tailClick" class="w-10 h-10 hover:cursor-pointer" src="pictures/toolsPictures/tailwind.png"/>
+        <button id="expandAll" class="removeExpand px-4 py-2  bg-blue-500 text-white rounded hover:bg-blue-700 hover:cursor-pointer">Expand all tables</button>
+        <div id="table-container" class="hidden"></div>
     </div>
 
+    <div class="pt-50 pb-15 text-center">
+        Contact me here
+        <div class="flex justify-center">
+            <div class="p-5">
+                <img class="w-10 h-10" src="pictures/gmail.png"/>
+                <a
+                class="gmail-link underline"
+                href="mailto:elizabethbooth05@gmail.com"
+                target="_blank">
+                Gmail
+                </a>
+            </div>
+            <div class="p-5">
+                <img class="w-10 h-10" src="pictures/linkedin.png"/>    
+                <a
+                class="linkedin-link underline"
+                href="https://www.linkedin.com/in/elizabeth-booth/"
+                target="_blank">
+                Linkedin
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <script src="src/tables.js"></script>
 </body>
 </html>

@@ -28,10 +28,22 @@
     font-style: italic;
 }
 
-
+.mobileborderCards
+{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
 
 @media screen and (max-width: 425px)
 {
+    .removeExpand{
+        display: none;
+    }
+    .mobileLinks
+    {
+        border-bottom: solid;
+    }
     .nav
     {
         justify-content: center;
