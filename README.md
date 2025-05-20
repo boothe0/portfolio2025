@@ -24,6 +24,11 @@ npm -v
 ```
 npm run dev
 ```
+### Step 4: Run tailwind css
+```
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+```
+Note that this should be in another terminal opened in the same folder as the project running at the same time as npm run dev for the most current css changes.
 
 ### Extras
 If a different build tool is desired change the scripts section under the package.json file to match.
