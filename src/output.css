@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
@@ -313,38 +312,8 @@
   .bg-\[oklch\(30\%_0_0\)\] {
     background-color: oklch(30% 0 0);
   }
-  .bg-\[oklch\(40\%_0_0\)\] {
-    background-color: oklch(40% 0 0);
-  }
-  .bg-\[oklch\(50\%_0\.07_130\)\] {
-    background-color: oklch(50% 0.07 130);
-  }
-  .bg-\[oklch\(50\%_0_0\)\] {
-    background-color: oklch(50% 0 0);
-  }
-  .bg-\[oklch\(70\%_0\.00_140\)\] {
-    background-color: oklch(70% 0.00 140);
-  }
-  .bg-\[oklch\(70\%_0\.07_110\)\] {
-    background-color: oklch(70% 0.07 110);
-  }
-  .bg-\[oklch\(70\%_0\.07_130\)\] {
-    background-color: oklch(70% 0.07 130);
-  }
-  .bg-\[oklch\(70\%_0\.07_140\)\] {
-    background-color: oklch(70% 0.07 140);
-  }
-  .bg-\[oklch\(70\%_0\.07_150\)\] {
-    background-color: oklch(70% 0.07 150);
-  }
-  .bg-\[oklch\(70\%_0\.08_140\)\] {
-    background-color: oklch(70% 0.08 140);
-  }
   .bg-\[oklch\(80\%_0\.07_120\)\] {
     background-color: oklch(80% 0.07 120);
-  }
-  .bg-\[oklch\(80\%_0\.07_130\)\] {
-    background-color: oklch(80% 0.07 130);
   }
   .bg-\[oklch\(95\.4\%_0\.038_75\.164\)\] {
     background-color: oklch(95.4% 0.038 75.164);
@@ -455,15 +424,8 @@
   .underline {
     text-decoration-line: underline;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .blur {
     --tw-blur: blur(8px);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition {
@@ -727,6 +689,16 @@
   border-style: solid;
   border-width: 2px;
   border-color: black;
+  .fade-element {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border: 2px solid red;
+    background: yellow;
+    min-height: 100px;
+  }
+  .fade-element.visible {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 425px) {
   .removeExpand {
@@ -773,11 +745,6 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -926,7 +893,6 @@
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
