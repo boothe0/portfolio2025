@@ -19,8 +19,11 @@
     />
   </head>
   <body>
-    <div id="theme_changer"></div>
-    <div class="flex justify-center pt-50 pb-10 text-[40px] name">
+    <div class="flex">
+      <div class="w-full" id="theme_changer"></div>
+    </div>
+
+    <div class="name-mobile flex justify-center pt-30 pb-10 text-[40px] name">
       Elizabeth Booth
     </div>
     <div class="major flex justify-center pb-50">Software Engineer</div>
@@ -39,12 +42,13 @@
       <div class="grid-rows-2 col-span-2 text-center">
         <div class="pb-15 font-bold">Introduction</div>
         <div class="intro_text">
-          I am a Junior at NAU studying software engineering. Currently, I am working with the .NET framework
-          and continuing my projects with Godot Game Engine. I have worked in multiple teams
-          utilizing version control systems including Git, and Kanban boards
-          such as Jira, to plan out development. I find myself enjoying seeing
-          visual and tangible changes with my code that emphasize the
-          intersection between engineering, creativity and art.
+          I am a Junior at NAU studying software engineering. Currently, I am
+          working with the .NET framework and continuing my projects with Godot
+          Game Engine. I have worked in multiple teams utilizing version control
+          systems including Git, and Kanban boards such as Jira, to plan out
+          development. I find myself enjoying seeing visual and tangible changes
+          with my code that emphasize the intersection between engineering,
+          creativity and art.
         </div>
       </div>
       <div class="flex flex-col md:flex-row 2xl:flex-row col-span-2 gap-4 p-2">
@@ -70,16 +74,20 @@
       Tools
       <div class="flex justify-center gap-4 flex-wrap">
         <img class="w-10 h-10" src="pictures/toolsPictures/c.png" />
-        <img class="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg" />
+        <img
+          class="w-10 h-10"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"
+        />
         <img class="w-10 h-10" src="pictures/toolsPictures/python.png" />
-        <img class='w-10 h-10' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+        <img
+          class="w-10 h-10"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
+        />
       </div>
     </div>
 
     <div class="pt-20 pl-3">Projects</div>
     <div class="flex flex-col md:flex-row 2xl:flex-row col-span-2 gap-4 p-2">
-
-
       <div
         class="border-2 flex flex-col font-bold text-center card sm:max-h-100 2xl:max-h-120"
       >
@@ -90,7 +98,8 @@
           <img src="pictures/godotGame.png" alt="godotProject" />
         </div>
         <div class="content-baseline">
-          Collaborative project inspired by games like Hades made in Godot Game Engine. 
+          Collaborative project inspired by games like Hades made in Godot Game
+          Engine.
         </div>
         <div class="pt-3 pb-4">
           <a
@@ -135,7 +144,8 @@
           <img src="pictures/KanbanProject.png" alt="recipeTracker" />
         </div>
         <div class="content-baseline">
-          In-progress solo project utilizing the Django Framework, JavaScript, HTML and Bootstrap CSS
+          In-progress solo project utilizing the Django Framework, JavaScript,
+          HTML and Bootstrap CSS
         </div>
         <div class="pt-9 md:pt-4 md:pb-5">
           <a
@@ -148,7 +158,7 @@
       </div>
     </div>
 
-    <div class=" flex pt-25 ml-2" id="image_buttons">
+    <div class="flex pt-25 ml-2" id="image_buttons">
       My viewpoint on the following programming languages:
       <div id="table-container" class="hidden"></div>
     </div>
@@ -178,6 +188,6 @@
         </div>
       </div>
     </div>
-  <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
