@@ -1,6 +1,10 @@
 import DisplayCTable from './CTable.jsx';
 import DisplayPyTable from './PyTable.jsx'
 import DisplayTailTable from './TailTable.jsx'
+import CBullets from './cbullets.jsx';
+import PyBullets from './pybullets.jsx';
+import TailBullets from './tailbullets.jsx';
+
 import { useState } from 'react';
 const logos = [
     {
@@ -48,7 +52,7 @@ function PopulateButtons(){
     }
     return (
         <div>
-            <div className="flex gap-2">
+            <div className="2xl:flex gap-2">
             My viewpoint on the following programming languages:
             {logos.map((logo) => (
                 <img
@@ -71,7 +75,7 @@ function PopulateButtons(){
 
             <div>
                 <div id="table-container" className={isShown ? '' : 'hidden'}>
-                    {currentTable === "c" && (screenSize > 425 ? <DisplayCTable /> : <CBullets />)}
+                    {currentTable === "c" && (screenSize > 425 ? <DisplayCTable /> :<CBullets/>)}
                     {currentTable === "py" && (screenSize > 425 ? <DisplayPyTable /> : <PyBullets />)}
                     {currentTable === "tail" && (screenSize > 425 ? <DisplayTailTable /> : <TailBullets />)}
                     {currentTable === "all" && (

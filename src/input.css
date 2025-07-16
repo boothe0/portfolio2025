@@ -84,4 +84,11 @@
   .name-mobile {
     padding-top: 10px;
   }
+  ul{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .block_about{
+    display: none;
+  }
 }
