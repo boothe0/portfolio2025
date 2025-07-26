@@ -3,7 +3,10 @@
   font-family: "Cormorant", serif;
   font-size: 25px;
 }
-
+.projects {
+  font-size: 40px;
+  font-weight: 800;
+}
 .logo {
   max-width: 10%;
   min-width: 50px;
@@ -42,6 +45,10 @@
 }
 
 @media screen and (max-width: 425px) {
+  * {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
   .removeExpand {
     display: none;
   }
@@ -84,11 +91,11 @@
   .name-mobile {
     padding-top: 10px;
   }
-  ul{
+  ul {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  .block_about{
+  .block_about {
     display: none;
   }
 }
