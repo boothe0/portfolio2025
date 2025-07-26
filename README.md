@@ -1,5 +1,8 @@
 # Updated Portfolio 2025
 
+### Note
+Not deployed at the time of writing.
+
 ### Getting Started
 
 The following will get the website up and running on your local environment.
